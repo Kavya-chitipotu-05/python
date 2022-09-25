@@ -1,3 +1,7 @@
+#python code for calculating no.of years,months and days for a given random number
+##ex: 567= 1year 6months 22 days
+
+
 lst=[]
 number=int(input())
 if(number//365>0):
