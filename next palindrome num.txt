@@ -1,0 +1,8 @@
+def palindrome_num(n):
+    for x in range(n+1,10000):
+        next_num=reversed(str(x))
+        if(x==int("".join(next_num))):
+            return x
+
+print(palindrome_num(565))
+
