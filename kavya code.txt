@@ -1,0 +1,26 @@
+lst=[]
+number=int(input())
+if(number//365>0):
+    year_rem=(number//365)
+    lst.append(year_rem)
+    new_num=number-(365*year_rem)
+    if(new_num//30>0):
+        month_rem=(new_num//30)
+        lst.append(month_rem)
+        new_new_num=new_num-(30*month_rem)
+        lst.append(new_new_num)
+    else:
+        lst.append(new_num)
+elif(number//30>0):
+    lst.append(0)
+    months_rem=(number//30)
+    lst.append(months_rem)
+    some_num=number-(30*months_rem)
+    lst.append(some_num)
+else:
+    lst.append(0)
+    lst.append(0)
+    lst.append(number)
+   
+print(lst[0],"year",lst[1],"months",lst[2],"days")
+
