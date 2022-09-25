@@ -1,3 +1,5 @@
+#python code to check wheather it is a strongnumber or not
+
 number=int(input())
 number=str(number)
 
