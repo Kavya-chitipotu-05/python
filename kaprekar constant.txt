@@ -2,11 +2,11 @@ a_num='1234'
 result_lst=[1234]
 while(a_num!='6174'):
 
-    low_num=sorted(a_num)
-    real_low_num=(''.join(low_num))
-    high_num=sorted(a_num,reverse=True)
-    real_high_num=(''.join(high_num))
-    diff_value=int(real_high_num)-int(real_low_num)
+    orderin_lownums=sorted(a_num)
+    low_num=(''.join(orderin_lownums))
+    orderin_highnums=sorted(a_num,reverse=True)
+    high_num=(''.join(orderin_highnums))
+    diff_value=int(high_num)-int(low_num)
     result_lst.append(diff_value)
     a_num=str(diff_value)
 print(result_lst)
